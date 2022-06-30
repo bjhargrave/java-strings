@@ -125,6 +125,10 @@ public class Strings {
 			in.readUnsignedShort(); // minor_version
 			in.readUnsignedShort(); // major_version
 			ConstantPool constant_pool = ConstantPool.read(in);
+			in.readUnsignedShort(); // access_flags
+			int this_class_index = in.readUnsignedShort();
+			String this_class = constant_pool.className(this_class_index);
+			System.err.printf(">> CLASS: %s\n", this_class);
 
 			int constant_pool_count = constant_pool.size();
 			for (int i = 1; i < constant_pool_count; i++) {
