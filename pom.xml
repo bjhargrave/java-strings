@@ -52,10 +52,10 @@
 		<osgi-test.version>1.1.0</osgi-test.version>
 	</properties>
 
-	<url>https://blog.hargrave.io</url>
+	<url>https://blog.hargrave.dev</url>
 	<organization>
 		<name>BJ Hargrave</name>
-		<url>https://blog.hargrave.io</url>
+		<url>https://blog.hargrave.dev</url>
 	</organization>
 	<licenses>
 		<license>
